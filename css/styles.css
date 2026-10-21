@@ -121,28 +121,32 @@ a { color: var(--accent); }
 /* 5. Project pages ------------------------------------------------------ */
 .crumb { display: inline-block; margin-bottom: 22px; font-weight: 700; text-decoration: none; }
 .crumb:hover { text-decoration: underline; text-underline-offset: 4px; }
-.page-head { padding: 56px 0 40px; }
-.page-head h1 { margin-bottom: 14px; font-size: 2.75rem; }
-.lede { margin: 0; color: var(--muted); font-size: 1.1rem; }
+.page-head { padding: 56px 0 28px; }
+.page-head h1 { font-size: 2.75rem; }
+.lede { margin: 24px 0 40px; color: var(--muted); font-size: 1.1rem; }
 .page-hero { display: block; width: 100%; height: auto; border-radius: 6px; }
 
-.campaign { padding: 48px 0; border-top: 1px solid var(--line); }
-.campaign h2 { margin-bottom: 24px; font-size: 2rem; }
-.campaign h3 { margin: 30px 0 6px; font-size: 1.2rem; }
-.campaign p { margin: 0; }
-.campaign p + p { margin-top: 14px; }
-.campaign .sub { margin: -12px 0 8px; color: var(--muted); font-size: 1.05rem; }
-.campaign ul { margin: 12px 0 0; padding-left: 20px; }
-.campaign li { margin-bottom: 8px; }
-.campaign p + ul, .campaign ul + p { margin-top: 16px; }
+.entry { padding: 48px 0; border-top: 1px solid var(--line); }
+.entry h2 { margin-bottom: 24px; font-size: 2rem; }
+.entry h3 { margin: 30px 0 6px; font-size: 1.2rem; }
+.entry p { margin: 0; }
+.entry p + p { margin-top: 14px; }
+.entry .sub { margin: -12px 0 8px; color: var(--muted); font-size: 1.05rem; }
+.entry ul { margin: 12px 0 0; padding-left: 20px; }
+.entry li { margin-bottom: 8px; }
+.entry p + ul, .entry ul + p { margin-top: 16px; }
 
 /* Screenshot rows: .c3 = three across, .c2 = two across */
 .shots { display: grid; gap: 14px; margin: 28px 0 0; }
 .shots + .shots { margin-top: 14px; }
 .shots.c3 { grid-template-columns: repeat(3, 1fr); }
 .shots.c2 { grid-template-columns: repeat(2, 1fr); }
+.shots.c1 { grid-template-columns: 1fr; }
 .shot { margin: 0; }
 .shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+/* Dashed box that stands in for a picture until you add one */
+.shot .placeholder { display: grid; place-items: center; aspect-ratio: 16 / 9; padding: 12px; color: var(--muted); font-size: 0.9rem; text-align: center; background: var(--band); border: 1px dashed var(--line); border-radius: 6px; }
+.read-link { display: inline-block; margin-top: 16px; font-weight: 700; }
 .shot figcaption { margin-top: 8px; color: var(--muted); font-size: 0.85rem; text-align: center; }
 .foot-link { padding: 36px 0 64px; border-top: 1px solid var(--line); }
 .foot-link .crumb { margin: 0; }
@@ -163,6 +167,6 @@ a { color: var(--accent); }
   .resume .row { grid-template-columns: 1fr; }
   .page-head { padding: 36px 0 28px; }
   .page-head h1 { font-size: 2.1rem; }
-  .campaign { padding: 36px 0; }
-  .campaign h2 { font-size: 1.6rem; }
+  .entry { padding: 36px 0; }
+  .entry h2 { font-size: 1.6rem; }
 }

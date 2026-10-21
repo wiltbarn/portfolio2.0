@@ -3,7 +3,11 @@ vanessabarron.fyi — site files
 
 WHAT'S HERE
   index.html                  Home page (hero, work cards, resume, contact)
-  email-sms-campaigns.html    Email & SMS campaigns page (3 campaigns)
+  email-sms-campaigns.html    Email & SMS campaigns page (3 campaigns, finished)
+  automation-bot.html         Project page with filler text (not linked yet)
+  tasting-table.html          Writing page with filler text (not linked yet)
+  pan-m-360.html              Writing page with filler text (not linked yet)
+  boston-uncovered.html       Writing page with filler text (not linked yet)
   css/styles.css              All styling for every page (colors are at the top)
   images/                     Photos, screenshots, logo, and icons
   files/                      Put your resume PDFs here (see below)
@@ -31,11 +35,14 @@ BEFORE YOU GO LIVE (search the files for "TODO" and for "[")
      Two cards still have [bracketed] placeholder captions (Gear Tribune Blog,
      Tasting Table).
 
-ADDING A PROJECT PAGE
+ADDING A PROJECT PAGE (or linking one of the filler pages above)
   Copy email-sms-campaigns.html, rename it (e.g. automation-bot.html), edit the
   text, then in index.html replace the card's "Coming soon" span with:
     <a class="more" href="/automation-bot.html" aria-label="Learn more about Automation bot">Learn more →</a>
-  and add the page to sitemap.xml.
+  and add the page to sitemap.xml. The four filler pages are not in sitemap.xml
+  and their cards still say "Coming soon" so the filler text stays out of sight
+  until you have filled them in. Dashed boxes marked [Picture] stand in for
+  images: replace the whole <div class="placeholder"> with an <img> tag.
 
 TESTING ON YOUR COMPUTER
   Opening the files by double-click won't show the logo (browsers block it for
