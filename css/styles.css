@@ -123,15 +123,16 @@ a { color: var(--accent); }
 .crumb:hover { text-decoration: underline; text-underline-offset: 4px; }
 .page-head { padding: 56px 0 40px; }
 .page-head h1 { margin-bottom: 14px; font-size: 2.75rem; }
-.lede { max-width: 60ch; margin: 0; color: var(--muted); font-size: 1.1rem; }
+.lede { margin: 0; color: var(--muted); font-size: 1.1rem; }
+.page-hero { display: block; width: 100%; height: auto; border-radius: 6px; }
 
 .campaign { padding: 48px 0; border-top: 1px solid var(--line); }
 .campaign h2 { margin-bottom: 24px; font-size: 2rem; }
 .campaign h3 { margin: 30px 0 6px; font-size: 1.2rem; }
-.campaign p { max-width: 68ch; margin: 0; }
+.campaign p { margin: 0; }
 .campaign p + p { margin-top: 14px; }
 .campaign .sub { margin: -12px 0 8px; color: var(--muted); font-size: 1.05rem; }
-.campaign ul { max-width: 68ch; margin: 12px 0 0; padding-left: 20px; }
+.campaign ul { margin: 12px 0 0; padding-left: 20px; }
 .campaign li { margin-bottom: 8px; }
 .campaign p + ul, .campaign ul + p { margin-top: 16px; }
 
