@@ -106,6 +106,8 @@ a { color: var(--accent); }
 .resume .org { margin: 2px 0 10px; color: var(--muted); font-size: 0.95rem; }
 .resume ul { margin: 0; padding-left: 18px; }
 .resume li { margin-bottom: 6px; }
+.resume .chip-label { margin: 22px 0 0; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.resume .chip-label + .chips { padding-top: 10px; }
 .resume .chips { display: flex; flex-wrap: wrap; gap: 10px; padding: 18px 0 0; list-style: none; }
 .resume .chips li { margin: 0; padding: 8px 16px; font-size: 0.95rem; background: var(--band); border: 1px solid var(--line); border-radius: 999px; }
 .resume-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-top: 18px; }
