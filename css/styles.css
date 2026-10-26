@@ -13,7 +13,7 @@
   --line: #cccabd;     /* borders and dividers */
   --accent: #2c4a37;   /* dark green accent */
   --photo: #c8c6b8;    /* color behind photos while they load */
-  --cta: #6f8164;      /* sage green behind the Resume button */
+  --cta: #2c4a37;      /* dark green behind the Resume button (same as --accent) */
   --cta-ink: #ffffff;  /* Resume button text */
 }
 @media (prefers-color-scheme: dark) {
