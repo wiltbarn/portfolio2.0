@@ -43,18 +43,40 @@
     <h1>Automation bot</h1>
   </div>
   <img class="page-hero" src="images/header-automation-bot.png" width="1125" height="450" alt="" fetchpriority="high">
-  <p class="lede">[One or two sentences introducing this project.]</p>
+  <p class="lede">I built an AI-powered system that finds creators, runs outreach, and moves partnership deals forward. I only step in when a real decision is needed.</p>
     <section class="entry" id="project">
-      <h2>[Project title]</h2>
+      <h2>COB: An Automated Creator Outreach System</h2>
       <div class="shots c1"><figure class="shot"><div class="placeholder">[Picture]</div><figcaption>[Caption]</figcaption></figure></div>
-      <h3>The idea</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <h3>The logistics</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <h3>The results</h3>
-      <p>Results coming soon.</p>
-      <h3>The takeaways</h3>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h3>The problem</h3>
+      <p>Creator partnerships are a big part of how we get gear like BeatBuddy and Aeros in front of musicians. But the process was all manual. Finding creators, writing emails, tracking replies in a spreadsheet, chasing follow-ups, and drafting contracts one by one ate up hours every week. And the creator lists I was pulling from weren’t great. Keyword searches surfaced plenty of channels that would never be a fit.</p>
+      <p>I wanted outreach to run on a system instead of on my memory and my inbox.</p>
+      <h3>The approach</h3>
+      <p>I started from an outreach workflow a colleague at Soundbrenner shared and adapted it to Singular Sound’s products and deal process. The result is COB (Creator Outreach Bot), which handles the full arc of a partnership:</p>
+      <p>Discovery: finds and scores YouTube creators against a fit rubric.</p>
+      <p>Outreach: drafts emails and schedules follow-ups.</p>
+      <p>CRM: keeps the deal tracker updated automatically</p>
+      <p>Decisions: sends anything that needs my judgment to Slack, where I can approve, reject, or reply with one click</p>
+      <p>CRM: keeps the deal tracker updated automatically</p>
+      <p>Contracts: fills our contract template from the deal details and sends it for manager review</p>
+      <p>Two principles shaped the build. First, the rules live in files, not in my head. Pricing logic, product fit, email sequences, and escalation rules are all written into playbook files the system follows, so when something needs fixing, the fix sticks. Second, a human stays in the loop where it counts. Nothing involving money or contracts reaches a creator without a person signing off.</p>
+
+      <h3Rethinking creator discovery</h3>
+      <p>The first version of discovery had two problems: weak matches and view numbers I couldn’t trust. Instead of hiring a freelancer to hand-pick creators, I rebuilt it as a staged pipeline that pulls real stats from YouTube, calculates clean metrics, and scores each channel before I ever see it.</p>
+      <p>The interesting part was deciding what “a good creator” actually means for us:</p>
+
+      <p>Engagement over audience size. I measure views relative to subscriber count, so a smaller channel with a loyal audience can outrank a big one coasting on old numbers.</p>
+      <p>Clean data. Shorts were inflating view counts, so I cut them from every calculation and switched to median views to blunt outliers.
+      <p>A real track record. Channels need consistent long-form content to qualify.</p>
+      <p>The right audience. Real musicians who’d use our products, not brand accounts, competitors, or creators whose audiences play a different game entirely.</p>
+      <p>The first live run surfaced 167 candidates, each one checked against these rules before reaching my review queue.</p>
+
+      <h3>What I had to figure out</h3>
+      <p>I work in marketing, not engineering, so a lot of this project was learning by debugging. I set up a cloud server, scheduled jobs, connected APIs, and built an interactive Slack app. Along the way I worked through sandbox network restrictions, a library update that broke my CRM connection, scheduled jobs that couldn’t see their credentials, and Python packaging rules on Linux. Each one taught me something about how the pieces fit together.</p>
+      <h3>Where it stands</h3>
+      <p>COB is live and managing active deals across BeatBuddy 2 and Aeros Gold Edition. The discovery pipeline is built and moving toward a regular schedule, and I’m working with my manager to turn our negotiation judgment calls into clear rules the system can follow.</p>
+      <h3>What I learned</h3>
+      <p>Automation is mostly a design problem. The code mattered less than the decisions behind it: what makes a creator worth reaching out to, which numbers can be trusted, and where a person has to stay involved. Writing those rules down turned my instincts into something repeatable, and that’s the part that will outlast any specific tool.</p>
+      <p>I also learned I can build things I would’ve assumed were out of reach a year ago. That’s changed how I look at every repetitive task on my plate.</p>
     </section>
   <div class="foot-link"><a class="crumb" href="/#marketing">← Back to all work</a></div>
 </main>
