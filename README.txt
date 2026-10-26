@@ -53,3 +53,5 @@ ARTICLE PAGE FORMAT: every project/article page has title, hero drawing, intro (
 facts card (Role, Company, Timeline, Tools) before the sections. Copy the <dl class="facts"> block.
 
 OPEN ITEM: secret-media.html -- add Google Analytics performance numbers if you find them (search for TODO). Also fill in Role and Timeline there.
+
+OPEN ITEM: card captions on index.html contain ## placeholders (Automation bot influencer count; Product & ad copy customers and ROAS). Search for "##".
