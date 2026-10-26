@@ -7,7 +7,7 @@ WHAT'S HERE
   automation-bot.html         COB / Automation bot page (finished, linked from the card)
   tasting-table.html          Writing page with filler text (not linked yet)
   pan-m-360.html              Writing page with filler text (not linked yet)
-  boston-uncovered.html       Writing page with filler text (not linked yet)
+  secret-media.html           Writing page (formerly Secret Media)
   css/styles.css              All styling for every page (colors are at the top)
   images/                     Photos, screenshots, logo, and icons
   files/                      Put your resume PDFs here (see below)
@@ -31,7 +31,7 @@ BEFORE YOU GO LIVE (search the files for "TODO" and for "[")
      writing-resume.pdf and complete-cv.pdf (or edit the links in index.html).
   2. The "internet radio show" link in the intro currently points to #.
   3. Cards for Automation bot, Gear Tribune Blog, Tasting Table, PAN M 360 and
-     Boston Uncovered say "Coming soon" because those pages don't exist yet.
+     Secret Media say "Coming soon" because those pages don't exist yet.
      Two cards still have [bracketed] placeholder captions (Gear Tribune Blog,
      Tasting Table).
 
@@ -49,3 +49,6 @@ TESTING ON YOUR COMPUTER
   local files) or follow the page links. Instead, open a
   terminal in this folder, run:  python3 -m http.server
   and visit http://localhost:8000
+
+ARTICLE PAGE FORMAT: every project/article page has title, hero drawing, intro (lede), then the
+facts card (Role, Company, Timeline, Tools) before the sections. Copy the <dl class="facts"> block.
