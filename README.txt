@@ -27,8 +27,7 @@ PAGE LINKS
   files for it and update.
 
 BEFORE YOU GO LIVE (search the files for "TODO" and for "[")
-  1. Resume PDFs: save them in files/ as marketing-resume.pdf,
-     writing-resume.pdf and complete-cv.pdf (or edit the links in index.html).
+  1. Resume PDF: save it in files/ as resume.pdf (or edit the link in index.html).
   2. About page: once about.html exists, add the "Learn more about me →" link to the intro (see the TODO in index.html). The radio show link will live there.
   3. Cards for Automation bot, Blog design & content, Tasting Table, PAN M 360 and
      Secret Media say "Coming soon" because those pages don't exist yet.
