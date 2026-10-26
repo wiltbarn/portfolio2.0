@@ -30,9 +30,9 @@ BEFORE YOU GO LIVE (search the files for "TODO" and for "[")
   1. Resume PDFs: save them in files/ as marketing-resume.pdf,
      writing-resume.pdf and complete-cv.pdf (or edit the links in index.html).
   2. The "internet radio show" link in the intro currently points to #.
-  3. Cards for Automation bot, Gear Tribune Blog, Tasting Table, PAN M 360 and
+  3. Cards for Automation bot, Blog design & content, Tasting Table, PAN M 360 and
      Secret Media say "Coming soon" because those pages don't exist yet.
-     Two cards still have [bracketed] placeholder captions (Gear Tribune Blog,
+     Two cards still have [bracketed] placeholder captions (
      Tasting Table).
 
 ADDING A PROJECT PAGE (or linking one of the filler pages above)
@@ -52,3 +52,5 @@ TESTING ON YOUR COMPUTER
 
 ARTICLE PAGE FORMAT: every project/article page has title, hero drawing, intro (lede), then the
 facts card (Role, Company, Timeline, Tools) before the sections. Copy the <dl class="facts"> block.
+
+OPEN ITEM: secret-media.html -- add Google Analytics performance numbers if you find them (search for TODO). Also fill in Role and Timeline there.
