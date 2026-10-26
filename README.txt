@@ -4,7 +4,7 @@ vanessabarron.fyi — site files
 WHAT'S HERE
   index.html                  Home page (hero, work cards, resume, contact)
   email-sms-campaigns.html    Email & SMS campaigns page (3 campaigns, finished)
-  automation-bot.html         Project page with filler text (not linked yet)
+  automation-bot.html         COB / Automation bot page (finished, linked from the card)
   tasting-table.html          Writing page with filler text (not linked yet)
   pan-m-360.html              Writing page with filler text (not linked yet)
   boston-uncovered.html       Writing page with filler text (not linked yet)

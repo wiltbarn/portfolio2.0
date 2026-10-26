@@ -124,6 +124,12 @@ a { color: var(--accent); }
 .page-head { padding: 56px 0 28px; }
 .page-head h1 { font-size: 2.75rem; }
 .lede { margin: 24px 0 40px; color: var(--muted); font-size: 1.1rem; }
+/* Project facts box (role, company, timeline, tools) */
+.facts { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 16px 32px; margin: 0 0 8px; padding: 20px 24px; background: var(--band); border-radius: 6px; }
+.facts div { min-width: 0; }
+.facts .wide { grid-column: 1 / -1; }
+.facts dt { color: var(--muted); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.facts dd { margin: 2px 0 0; }
 .page-hero { display: block; width: 100%; height: auto; border-radius: 6px; }
 
 .entry { padding: 48px 0; border-top: 1px solid var(--line); }
@@ -146,6 +152,12 @@ a { color: var(--accent); }
 .shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
 /* Dashed box that stands in for a picture until you add one */
 .shot .placeholder { display: grid; place-items: center; aspect-ratio: 16 / 9; padding: 12px; color: var(--muted); font-size: 0.9rem; text-align: center; background: var(--band); border: 1px dashed var(--line); border-radius: 6px; }
+/* Project facts (role, company, timeline, tools) */
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; margin: 0 0 40px; }
+.lede + .facts { margin-top: -16px; }
+.facts .wide { grid-column: 1 / -1; }
+.facts dt { color: var(--muted); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.facts dd { margin: 2px 0 0; }
 .read-link { display: inline-block; margin-top: 16px; font-weight: 700; }
 .shot figcaption { margin-top: 8px; color: var(--muted); font-size: 0.85rem; text-align: center; }
 .foot-link { padding: 36px 0 64px; border-top: 1px solid var(--line); }
@@ -163,10 +175,11 @@ a { color: var(--accent); }
   .nav-in { padding: 10px 16px; }
   .nav nav { gap: 18px; }
   .section-title { font-size: 2.2rem; }
-  .grid, .contact, .resume-links, .shots.c3, .shots.c2 { grid-template-columns: 1fr; }
+  .grid, .contact, .resume-links, .shots.c3, .shots.c2, .facts { grid-template-columns: 1fr; }
   .resume .row { grid-template-columns: 1fr; }
   .page-head { padding: 36px 0 28px; }
   .page-head h1 { font-size: 2.1rem; }
   .entry { padding: 36px 0; }
+  .facts { grid-template-columns: 1fr; }
   .entry h2 { font-size: 1.6rem; }
 }
