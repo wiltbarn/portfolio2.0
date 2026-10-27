@@ -208,3 +208,5 @@ a { color: var(--accent); }
   .facts { grid-template-columns: 1fr; }
   .entry h2 { font-size: 1.6rem; }
 }
+.shot.map { max-width: 620px; margin: 28px auto 0; }
+.shot.map + p { margin-top: 24px; }
