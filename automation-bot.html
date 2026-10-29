@@ -64,12 +64,13 @@
         <li><strong>Discovery:</strong> finds and scores YouTube creators against a fit rubric</li>
         <li><strong>Outreach:</strong> drafts emails and schedules follow-ups</li>
         <li><strong>CRM:</strong> keeps the deal tracker updated automatically</li>
-        <li><strong>Decisions:</strong> sends anything that needs my judgment to Slack, where I can approve, reject, or reply with one click</li>
+        <li><strong>Decisions:</strong> sends anything that needs my judgment to Slack, where I reply with a direction, or approve with one click when it’s a simple yes or no</li>
         <li><strong>Contracts:</strong> fills our contract template from the deal details and sends it for manager review</li>
     </ul>
-      <div class="shots c1"><figure class="shot"><div class="placeholder">[Picture]</div><figcaption>[Diagram: the five stages, from discovery to contract]</figcaption></figure></div>
+      <div class="shots c1"><figure class="shot"><div class="diagram" role="img" aria-label="Hand-drawn diagram of the five stages: Discovery leads to Outreach, then to a CRM tracker, then to Decisions with approve and reject boxes, and finally to a signed Contract"></div><figcaption>The five stages, from discovery to contract</figcaption></figure></div>
     <p>Two principles shaped the build. First, the rules live in files, not in my head. Pricing logic, product fit, email sequences, and escalation rules are all written into playbook files the system follows, so when something needs fixing, the fix sticks. Second, a human stays in the loop where it counts. Nothing involving money or contracts reaches a creator without a person signing off.</p>
-      <div class="shots c1"><figure class="shot"><div class="placeholder">[Picture]</div><figcaption>[Screenshot: a Slack approval message with the approve, reject, and reply buttons (blur names and emails)]</figcaption></figure></div>
+      <div class="shots c1"><figure class="shot"><img src="images/cob-playbook.png" width="1530" height="640" alt="Excerpt from COB’s instruction file: it must check the CRM and a prior-contacts tab for duplicates before drafting anything, and stop and flag if the creator already exists" loading="lazy" decoding="async"><figcaption>An excerpt from COB’s playbook: before it drafts anything, it checks the CRM and my prior contacts for duplicates</figcaption></figure></div>
+      <div class="shots c2"><figure class="shot"><img src="images/cob-slack-status.png" width="607" height="912" alt="Slack thread where COB reports outreach status: no new replies, no urgent decisions, creator names blurred, and “No emails were sent and no records were changed”" loading="lazy" decoding="async"><figcaption>COB reporting back in Slack (creator names blurred)</figcaption></figure><figure class="shot"><img src="images/cob-slack-filming.png" width="598" height="1000" alt="Slack thread where COB answers a question about filming requirements for BeatBuddy 2, Aeros Gold Edition, and BeatBuddy MINI 2, from its playbook" loading="lazy" decoding="async"><figcaption>COB answering a question from its playbook</figcaption></figure></div>
   </section>
 
   <section class="entry" id="discovery">
@@ -83,18 +84,19 @@
         <li><strong>The right audience.</strong> Real musicians who’d use our products, not brand accounts, competitors, or creators whose audiences play a different game entirely.</li>
     </ul>
     <p>The first live run surfaced 167 candidates, each one checked against these rules before reaching my review queue.</p>
-      <div class="shots c1"><figure class="shot"><div class="placeholder">[Picture]</div><figcaption>[Screenshot: the scored creator list in Google Sheets (blur names)]</figcaption></figure></div>
+      <div class="shots c1"><figure class="shot"><img src="images/cob-creator-scores.png" width="1600" height="809" alt="Google Sheet of scored YouTube creators with account type, instrument, partnership signal, scores for niche fit, content relevance, view performance and activity, a total score, and a shortlist or reject decision; names, links, and reasons are blurred" loading="lazy" decoding="async"><figcaption>The scored creator list: each channel gets a total score and a shortlist or reject decision (names, links, and reasons blurred)</figcaption></figure></div>
   </section>
 
   <section class="entry" id="figuring-out">
     <h2>What I had to figure out</h2>
     <p>I work in marketing, not engineering, so a lot of this project was learning by debugging. I set up a cloud server, scheduled jobs, connected APIs, and built an interactive Slack app. Along the way I worked through sandbox network restrictions, a library update that broke my CRM connection, scheduled jobs that couldn’t see their credentials, and Python packaging rules on Linux. Each one taught me something about how the pieces fit together.</p>
+      <div class="shots c1"><figure class="shot"><img src="images/cob-cron.png" width="1534" height="210" alt="Cron schedule on a cloud server: one job runs hourly on weekdays to check for new replies and draft responses, and another script runs every five minutes" loading="lazy" decoding="async"><figcaption>The schedule: an hourly weekday check for new replies, and a script that routes decisions every five minutes</figcaption></figure></div>
   </section>
 
   <section class="entry" id="status">
     <h2>Where it stands</h2>
-    <p>COB is live and managing active deals across BeatBuddy 2 and Aeros Gold Edition. The discovery pipeline is built and moving toward a regular schedule, and I’m working with my manager to turn our negotiation judgment calls into clear rules the system can follow.</p>
-      <div class="shots c1"><figure class="shot"><div class="placeholder">[Picture]</div><figcaption>[Screenshot: the deal tracker (blur names and amounts)]</figcaption></figure></div>
+    <p>COB is in active development, with deals in progress across BeatBuddy 2 and Aeros Gold Edition. The discovery pipeline is built and moving toward a regular schedule, and I’m working with my manager to turn our negotiation judgment calls into clear rules the system can follow.</p>
+      <div class="shots c1"><figure class="shot"><img src="images/cob-deal-tracker.png" width="1600" height="923" alt="Google Sheet titled BeatBuddy 2 Creator CRM, with columns for subscribers, niche, average views, tier, first contact, last touch, touch count, status, and last action; names, emails, links, and fees are blurred" loading="lazy" decoding="async"><figcaption>The deal tracker, with names, emails, and fees blurred</figcaption></figure></div>
   </section>
 
   <section class="entry" id="learned">

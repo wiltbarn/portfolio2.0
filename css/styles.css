@@ -210,3 +210,26 @@ a { color: var(--accent); }
 }
 .shot.map { max-width: 620px; margin: 28px auto 0; }
 .shot.map + p { margin-top: 24px; }
+.diagram { width: min(100%, 440px); aspect-ratio: 1; margin: 0 auto; background: var(--ink); -webkit-mask: url("../images/diagram-cob-stages.png") center / contain no-repeat; mask: url("../images/diagram-cob-stages.png") center / contain no-repeat; }
+.shots + p { margin-top: 24px; }
+
+/* Light/dark screenshot toggle (no JavaScript): radios + sibling selectors */
+.theme-demo { position: relative; margin-top: 24px; }
+.theme-demo input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.theme-demo .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--band); }
+.theme-demo .seg label { padding: 6px 18px; border-radius: 999px; font-size: 0.9rem; cursor: pointer; color: var(--ink); }
+#gt-light:checked ~ .seg label[for="gt-light"], #gt-dark:checked ~ .seg label[for="gt-dark"] { background: var(--cta); color: var(--cta-ink); }
+#gt-light:focus-visible ~ .seg label[for="gt-light"], #gt-dark:focus-visible ~ .seg label[for="gt-dark"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+#gt-light:checked ~ .shots .is-dark, #gt-dark:checked ~ .shots .is-light { display: none; }
+.theme-demo .shots { margin-top: 16px; }
+
+.shot.portrait { max-width: 420px; margin: 28px auto 0; }
+.shot video { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; background: #000; }
+.quote { margin: 8px 0 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--line); color: var(--muted); }
+
+.shot.square { max-width: 520px; margin: 28px auto 0; }
+
+/* Small thumbnail beside a wide screenshot */
+.shots.pair { grid-template-columns: 220px 1fr; align-items: center; }
+.shots.c2 { align-items: start; }
+@media (max-width: 760px) { .shots.pair { grid-template-columns: 1fr; } .shots.pair .shot:first-child { max-width: 220px; } }
